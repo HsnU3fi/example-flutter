@@ -221,6 +221,7 @@ class Cards extends StatelessWidget {
                             Column(
                               mainAxisAlignment: MainAxisAlignment.end,
                               children: [
+                                if (context.watch<CardsProvider>().items[index] == false)
                                 Container(
                                   padding:
                                       const EdgeInsets.fromLTRB(0, 0, 20, 15),
