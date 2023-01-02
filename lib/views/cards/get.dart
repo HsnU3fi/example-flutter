@@ -1,11 +1,9 @@
 import 'dart:convert';
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_tabler_icons/flutter_tabler_icons.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-
 import '../../providers/cards.provider.dart';
 import 'edit.dart';
 
@@ -14,6 +12,7 @@ class Cards extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    bool? isChecked = false;
     return Scaffold(
       appBar: AppBar(
           automaticallyImplyLeading: false,
@@ -67,15 +66,13 @@ class Cards extends StatelessWidget {
                     iconSize: 25,
                     color: Colors.black,
                     icon: const Icon(TablerIcons.trash),
-                    onPressed: () {
-                      context.read<CardsProvider>().deleteCards;
-                    }),
+                    onPressed: () {}),
                 Container(
                     padding: const EdgeInsets.only(right: 8),
                     child: Checkbox(
-                      value: context.watch<CardsProvider>().isChecked,
+                      value: isChecked,
                       onChanged: (bool? value) {
-                        context.read<CardsProvider>().isChecked = value!;
+                        isChecked = value!;
                       },
                     ))
               ],
@@ -206,16 +203,15 @@ class Cards extends StatelessWidget {
                                 var item = context
                                     .read<CardsProvider>()
                                     .items[index]["ID"];
-                                context
-                                    .read<CardsProvider>()
-                                    .getItemCard(item);
+                                context.read<CardsProvider>().getItemCard(item);
                                 sendItemsToEditPage(context);
-
                               },
                             ),
                             Checkbox(
-                              value:false,
-                              onChanged: (value) {},
+                              value: isChecked,
+                              onChanged: (value) {
+                                isChecked=value!;
+                              },
                             ),
                           ],
                         ),
@@ -277,7 +273,6 @@ class Cards extends StatelessWidget {
     );
   }
   void sendItemsToEditPage(context) {
-
     Navigator.push(
         context,
         MaterialPageRoute(
