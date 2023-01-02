@@ -169,7 +169,7 @@ class Cards extends StatelessWidget {
                                       mainAxisAlignment:
                                           MainAxisAlignment.start,
                                       children: [
-                                        Image.asset('assets/images/active.png'),
+                                        Image.asset('assets/images/active.png',width: 20,height: 20 ,fit: BoxFit.fill,),
                                       ],
                                     ),
                                   ),
@@ -184,7 +184,7 @@ class Cards extends StatelessWidget {
                                           MainAxisAlignment.start,
                                       children: [
                                         Image.asset(
-                                            'assets/images/deactivate.png'),
+                                            'assets/images/deactivate.png',width: 20,height: 20 ,fit: BoxFit.fill,),
                                       ],
                                     ),
                                   ),
