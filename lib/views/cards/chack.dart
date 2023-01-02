@@ -156,7 +156,7 @@ class CheckCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    width: 150,
+                    width: 100,
                     padding: const EdgeInsets.only(left: 30),
                     child: const Text("Mobile :",
                         textAlign: TextAlign.start,
@@ -448,7 +448,7 @@ class CheckImage extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.bold),
               ),
               const SizedBox(
-                width: 50,
+                width: 30,
               ),
               Container(
                   width: 130,
