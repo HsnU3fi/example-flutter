@@ -55,8 +55,8 @@ class CheckCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    width: 150,
-                    padding: const EdgeInsets.only(left: 30),
+                    width: 100,
+                    padding: const EdgeInsets.only(left: 20),
                     child: const Text("Name :",
                         textAlign: TextAlign.start,
                         style:
@@ -67,7 +67,7 @@ class CheckCard extends StatelessWidget {
                     width: 10,
                   ),
                   SizedBox(
-                    width: 80,
+                    width: 100,
                     child: Text(context.watch<CardsProvider>().name,
                         textAlign: TextAlign.start,
                         style: const TextStyle(
@@ -106,8 +106,8 @@ class CheckCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    width: 150,
-                    padding: const EdgeInsets.only(left: 30),
+                    width: 120,
+                    padding: const EdgeInsets.only(left: 20),
                     child: const Text("Family Name :",
                         textAlign: TextAlign.start,
                         style:
@@ -118,7 +118,7 @@ class CheckCard extends StatelessWidget {
                     width: 10,
                   ),
                   SizedBox(
-                    width: 80,
+                    width: 100,
                     child: Text(context.watch<CardsProvider>().familyName,
                         textAlign: TextAlign.start,
                         style: const TextStyle(
@@ -157,7 +157,7 @@ class CheckCard extends StatelessWidget {
                 children: [
                   Container(
                     width: 100,
-                    padding: const EdgeInsets.only(left: 30),
+                    padding: const EdgeInsets.only(left: 20),
                     child: const Text("Mobile :",
                         textAlign: TextAlign.start,
                         style:
@@ -206,8 +206,8 @@ class CheckCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    width: 150,
-                    padding: const EdgeInsets.only(left: 30),
+                    width: 100,
+                    padding: const EdgeInsets.only(left: 20),
                     child: const Text("ID No :",
                         textAlign: TextAlign.start,
                         style:
@@ -218,7 +218,7 @@ class CheckCard extends StatelessWidget {
                     width: 10,
                   ),
                   SizedBox(
-                    width: 80,
+                    width: 100,
                     child: Text(context.watch<CardsProvider>().iDNo,
                         textAlign: TextAlign.start,
                         style: const TextStyle(
@@ -256,8 +256,8 @@ class CheckCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    width: 160,
-                    padding: const EdgeInsets.only(left: 30),
+                    width: 100,
+                    padding: const EdgeInsets.only(left: 20),
                     child: const Text("Birth Date :",
                         textAlign: TextAlign.start,
                         style:
@@ -268,7 +268,7 @@ class CheckCard extends StatelessWidget {
                     width: 10,
                   ),
                   SizedBox(
-                    width: 80,
+                    width: 100,
                     child: Text(context.watch<CardsProvider>().birthDate,
                         textAlign: TextAlign.start,
                         style: const TextStyle(
@@ -306,8 +306,8 @@ class CheckCard extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    width: 150,
-                    padding: const EdgeInsets.only(left: 30),
+                    width: 100,
+                    padding: const EdgeInsets.only(left: 20),
                     child: const Text("Address :",
                         textAlign: TextAlign.start,
                         style:
@@ -318,7 +318,7 @@ class CheckCard extends StatelessWidget {
                     width: 10,
                   ),
                   SizedBox(
-                    width: 80,
+                    width: 100,
                     child: Text(context.watch<CardsProvider>().address,
                         textAlign: TextAlign.start,
                         style: const TextStyle(
